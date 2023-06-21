@@ -1,0 +1,33 @@
+localhost:8080/odontologos
+POST crear odontologo
+
+{
+    "apellido" : "sarmiento", 
+    "nombre" : "sergio", 
+    "matricula" : "12341"
+}
+
+localhost:8080/paciente
+{
+        "nombre": "mila",
+        "apellido": "malagon",
+        "dni": "4324",
+        "fechaDeAlta": "2020-02-02T00:00:00.000+00:00",
+        "domicilio": {
+            "calle":"calle 13",
+            "altura": 10,
+            "localidad" : "portaria",
+            "provincia" : "CA"
+        }
+    }
+
+localhost:8080/turnos
+{
+    "paciente" : {
+            "id" : 1
+        }, 
+    "odontologo" : {
+        "id" : 1
+    },
+    "fechayHora" : "2020-02-02"
+}
