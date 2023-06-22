@@ -9,5 +9,4 @@ class Clinica2ApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }

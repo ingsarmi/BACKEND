@@ -32,10 +32,10 @@ public class PacienteController {
     @PostMapping()
     public ResponseEntity<?> registrar(@RequestBody Paciente paciente){
         domicilioService.guardardomicilio(paciente.getDomicilio());
-        return ResponseEntity.ok(pacienteService.guardar(paciente));
+        pacienteService.guardar(paciente);
+        return ResponseEntity.ok(HttpStatus.OK);
 
     }
-
     @PutMapping()
     public ResponseEntity<?> modificarpaciente(@RequestBody Paciente paciente){
         pacienteService.modificarpaciente(paciente);

@@ -31,3 +31,6 @@ localhost:8080/turnos
     },
     "fechayHora" : "2020-02-02"
 }
+
+para revisar le metodos
+http://localhost:8080/doc/swagger-ui/index.html
